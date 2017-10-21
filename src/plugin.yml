@@ -1,0 +1,7 @@
+name: Waze
+author: Weefle
+version: 1.0
+description: Official Waze Core Plugin
+main: fr.weefle.wazecore.Main
+commands:
+  ping:
