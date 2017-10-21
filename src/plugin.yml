@@ -4,4 +4,4 @@ version: 0.0.1
 description: Official Waze Core Plugin
 main: fr.weefle.wazecore.Main
 commands:
-  ping:
+  lag:
