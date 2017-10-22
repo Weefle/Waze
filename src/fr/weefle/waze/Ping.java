@@ -1,4 +1,4 @@
-package fr.weefle.wazeapi;
+package fr.weefle.waze;
 
 
 import org.bukkit.craftbukkit.v1_9_R1.entity.CraftPlayer;

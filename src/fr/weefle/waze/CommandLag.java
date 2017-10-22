@@ -1,6 +1,5 @@
-package fr.weefle.wazecore;
+package fr.weefle.waze;
 
-import fr.weefle.wazeapi.Ping;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,7 +1,6 @@
-package fr.weefle.wazecore;
+package fr.weefle.waze;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.messaging.PluginMessageListener;
 
 public class Main extends JavaPlugin {
     public String name;

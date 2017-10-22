@@ -1,4 +1,4 @@
-package fr.weefle.wazecore;
+package fr.weefle.waze;
 
 import java.sql.SQLException;
 

@@ -1,4 +1,4 @@
-package fr.weefle.wazecore;
+package fr.weefle.waze;
 
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteStreams;

@@ -1,4 +1,4 @@
-package fr.weefle.wazecore;
+package fr.weefle.waze;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,6 +25,7 @@ public class DbConnect {
         if(this.connection != null){
             if(!this.connection.isClosed()) {
                 this.connection.close();
+                Logger.getLogger("Minecraft").info("Déconnecté de la base de données!");
             }
         }
     }
