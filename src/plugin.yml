@@ -1,6 +1,6 @@
 name: Waze
 author: Weefle
-version: 0.0.2
+version: 0.0.3
 description: Plugin officiel du Waze Network
 main: fr.weefle.waze.Main
 commands:

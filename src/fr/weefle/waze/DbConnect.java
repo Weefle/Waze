@@ -1,9 +1,9 @@
 package fr.weefle.waze;
 
+import org.bukkit.Bukkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Logger;
 
 public class DbConnect {
     private Connection connection;
@@ -16,7 +16,7 @@ public class DbConnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             this.connection = DriverManager.getConnection(this.dbaccount.toURI(), this.dbaccount.getUser(), this.dbaccount.getPass());
-            Logger.getLogger("Minecraft").info("Connecté à la base de données!");
+            Bukkit.getLogger().info(Main.instance.name + "§3Connecté à la base de données!");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -25,7 +25,7 @@ public class DbConnect {
         if(this.connection != null){
             if(!this.connection.isClosed()) {
                 this.connection.close();
-                Logger.getLogger("Minecraft").info("Déconnecté de la base de données!");
+                Bukkit.getLogger().info(Main.instance.name + "§3Déconnecté de la base de données!");
             }
         }
     }

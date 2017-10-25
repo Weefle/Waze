@@ -1,14 +1,17 @@
 package fr.weefle.waze;
 
+import net.minecraft.server.v1_9_R1.CommandParticle;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
     public String name;
+    public static Main instance;
     private DbManager dbmanager;
 
     @Override
     public void onEnable() {
-        getCommand("lag").setExecutor(new CommandLag(this));
+        instance = this;
+        getCommand("lag").setExecutor(new LagCommand(this));
         getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
         getServer().getMessenger().registerIncomingPluginChannel(this, "BungeeCord", new MessageListener());
         name = "§8[§cWaze§8] ";
