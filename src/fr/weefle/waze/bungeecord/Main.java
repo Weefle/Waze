@@ -7,7 +7,7 @@ public class Main extends Plugin {
     @Override
     public void onEnable() {
         getProxy().registerChannel("BungeeCord");
-        getProxy().getPluginManager().registerCommand(this, new TestCommand());
+        getProxy().getPluginManager().registerCommand(this, new AdvertCommand());
         super.onEnable();
     }
 }

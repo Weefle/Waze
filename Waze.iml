@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="BungeeCord-1278" level="project" />
     <orderEntry type="library" name="spigot-1.9-R0.1-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="BungeeCord-1265" level="project" />
   </component>
 </module>
