@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Waze:jar">
-    <output-path>$USER_HOME$/Desktop/umbaska/plugins</output-path>
+    <output-path>$USER_HOME$/Documents/idea</output-path>
     <root id="archive" name="Waze.jar">
       <element id="module-output" name="Waze" />
     </root>
