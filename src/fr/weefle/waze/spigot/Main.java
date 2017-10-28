@@ -1,6 +1,5 @@
-package fr.weefle.waze;
+package fr.weefle.waze.spigot;
 
-import net.minecraft.server.v1_9_R1.CommandParticle;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {

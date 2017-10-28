@@ -1,4 +1,4 @@
-package fr.weefle.waze;
+package fr.weefle.waze.spigot;
 
 import org.bukkit.Bukkit;
 import java.sql.Connection;

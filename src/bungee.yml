@@ -1,0 +1,5 @@
+name: Waze
+author: Weefle
+version: 0.0.1
+description: Plugin BungeeCord officiel du Waze Network
+main: fr.weefle.waze.spigot.Main

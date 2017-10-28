@@ -1,4 +1,4 @@
-package fr.weefle.waze;
+package fr.weefle.waze.spigot;
 
 import java.sql.SQLException;
 
