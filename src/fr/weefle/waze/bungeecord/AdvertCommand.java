@@ -19,18 +19,14 @@ public class AdvertCommand extends Command {
         ProxiedPlayer p = (ProxiedPlayer) sender;
 
         if(sender instanceof ProxiedPlayer){
-            if(args.length == 1){
-                if(args[0] != null){
+            if(args.length >= 1){
                     Title title = ProxyServer.getInstance().createTitle();
                     title.title(new TextComponent("§4" + args[0]));
                     for(ProxiedPlayer pl : ProxyServer.getInstance().getPlayers()){
                         title.send(pl);
                     }
-                }else{
-                    p.sendMessage(new TextComponent("§4Tu n'as pas entré de phrase!"));
-                }
             }else{
-                p.sendMessage(new TextComponent("§4Il y a trop ou pas assez d'argument(s)!"));
+                p.sendMessage(new TextComponent("§4Il n'y a pas assez d'argument(s)!"));
             }
 
         }else{
