@@ -21,7 +21,7 @@ public class AdvertCommand extends Command {
         if(sender instanceof ProxiedPlayer){
             if(args.length >= 1){
                     Title title = ProxyServer.getInstance().createTitle();
-                    title.title(new TextComponent("§4" + args[0]));
+                    title.title(new TextComponent("§4" + args));
                     for(ProxiedPlayer pl : ProxyServer.getInstance().getPlayers()){
                         title.send(pl);
                     }
