@@ -1,4 +1,4 @@
-package fr.weefle.waze.spigot;
+package fr.weefle.waze.bungeecord;
 
 public class DbAccount {
     private String host;

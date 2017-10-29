@@ -1,6 +1,6 @@
 name: Waze
 author: Weefle
-version: 0.0.3
+version: 0.0.4
 description: Plugin Spigot officiel du Waze Network
 main: fr.weefle.waze.spigot.Main
 commands:

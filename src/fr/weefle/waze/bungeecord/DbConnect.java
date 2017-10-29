@@ -1,5 +1,7 @@
-package fr.weefle.waze.spigot;
+package fr.weefle.waze.bungeecord;
 
+import fr.weefle.waze.bungeecord.DbAccount;
+import fr.weefle.waze.spigot.Main;
 import org.bukkit.Bukkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,7 +18,7 @@ public class DbConnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             this.connection = DriverManager.getConnection(this.dbaccount.toURI(), this.dbaccount.getUser(), this.dbaccount.getPass());
-            Bukkit.getLogger().info(Main.instance.name + "§3Connecté à la base de données!");
+            Bukkit.getLogger().info(fr.weefle.waze.spigot.Main.instance.name + "§3Connecté à la base de données!");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

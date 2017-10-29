@@ -1,5 +1,5 @@
 name: Waze
 author: Weefle
-version: 0.0.3
+version: 0.0.4
 description: Plugin BungeeCord officiel du Waze Network
 main: fr.weefle.waze.bungeecord.Main
