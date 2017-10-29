@@ -1,11 +1,6 @@
 package fr.weefle.waze.bungeecord;
 
-import fr.weefle.waze.bungeecord.DbAccount;
-import fr.weefle.waze.spigot.Main;
 import net.md_5.bungee.api.ProxyServer;
-import org.bukkit.Bukkit;
-import org.bukkit.command.CommandSender;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
