@@ -17,11 +17,15 @@ public class AdvertCommand extends Command {
     public void execute(CommandSender sender, String[] args) {
 
         ProxiedPlayer p = (ProxiedPlayer) sender;
+        StringBuilder sb = new StringBuilder();
 
         if(sender instanceof ProxiedPlayer){
             if(args.length >= 1){
                     Title title = ProxyServer.getInstance().createTitle();
-                    title.title(new TextComponent("§4" + args));
+                    for(String s : args){
+                        sb.append(s + " ");
+                    }
+                title.title(new TextComponent("§4" + sb.toString()));
                     for(ProxiedPlayer pl : ProxyServer.getInstance().getPlayers()){
                         title.send(pl);
                     }
