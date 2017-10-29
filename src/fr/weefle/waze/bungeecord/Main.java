@@ -4,9 +4,12 @@ import net.md_5.bungee.api.plugin.Plugin;
 
 public class Main extends Plugin {
     private DbManager dbmanager;
+    public String name;
+    public static Main instance;
 
     @Override
     public void onEnable() {
+        instance = this;
         getProxy().registerChannel("BungeeCord");
         getProxy().getPluginManager().registerCommand(this, new AdvertCommand());
         dbmanager = new DbManager();
