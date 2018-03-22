@@ -16,7 +16,7 @@ public class DbConnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             this.connection = DriverManager.getConnection(this.dbaccount.toURI(), this.dbaccount.getUser(), this.dbaccount.getPass());
-            ProxyServer.getInstance().getLogger().info(Main.instance.name + "Â§3ConnectÃ© Ã  la base de donnÃ©es!");
+            ProxyServer.getInstance().getLogger().info(Main.instance.name + "§3Connecté à  la base de données!");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -25,7 +25,7 @@ public class DbConnect {
         if(this.connection != null){
             if(!this.connection.isClosed()) {
                 this.connection.close();
-                ProxyServer.getInstance().getLogger().info(Main.instance.name + "Â§3DÃ©connectÃ© de la base de donnÃ©es!");
+                ProxyServer.getInstance().getLogger().info(Main.instance.name + "§3Déconnecté de la base de données!");
             }
         }
     }

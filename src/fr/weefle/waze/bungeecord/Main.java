@@ -10,7 +10,7 @@ public class Main extends Plugin {
     @Override
     public void onEnable() {
         instance = this;
-        name = "Â§8[Â§cWazeÂ§8] ";
+        name = "§8[§cWaze§8] ";
         getProxy().registerChannel("BungeeCord");
         getProxy().getPluginManager().registerCommand(this, new AdvertCommand());
         dbmanager = new DbManager();

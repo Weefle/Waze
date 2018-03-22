@@ -25,16 +25,16 @@ public class AdvertCommand extends Command {
                     for(String s : args){
                         sb.append(s + " ");
                     }
-                title.title(new TextComponent("ยง4" + sb.toString()));
+                title.title(new TextComponent("ง4" + sb.toString()));
                     for(ProxiedPlayer pl : ProxyServer.getInstance().getPlayers()){
                         title.send(pl);
                     }
             }else{
-                p.sendMessage(new TextComponent("ยง4Il n'y a pas assez d'argument(s)!"));
+                p.sendMessage(new TextComponent("ง4Il n'y a pas assez d'argument(s)!"));
             }
 
         }else{
-            sender.sendMessage(new TextComponent("ยง4Tu n'es pas un joueur!"));
+            sender.sendMessage(new TextComponent("ง4Tu n'es pas un joueur!"));
         }
 
     }

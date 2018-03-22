@@ -11,7 +11,7 @@ public class Main extends JavaPlugin {
         instance = this;
         getCommand("lag").setExecutor(new LagCommand(this));
         getServer().getMessenger().registerIncomingPluginChannel(this, "BungeeCord", new MessageListener());
-        name = "Â§8[Â§cWazeÂ§8] ";
+        name = "§8[§cWaze§8] ";
         super.onEnable();
     }
 

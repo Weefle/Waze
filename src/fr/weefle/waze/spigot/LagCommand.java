@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class LagCommand implements CommandExecutor {
+	Ping ping = new Ping();
     public Main main;
     public LagCommand(Main m) {
         this.main = m;
@@ -27,10 +28,10 @@ public class LagCommand implements CommandExecutor {
                         Player pl = Bukkit.getServer().getPlayer(s);
 
                         if(Bukkit.getServer().getPlayer(s) == null) {
-                            p.sendMessage(main.name + "Â§4Le joueur Â§3" + s + " Â§4n'existe pas ou n'est pas connectÃ©!");
+                            p.sendMessage(main.name + "§4Le joueur §3" + s + " §4n'existe pas ou n'est pas connecté!");
                         }else {
                             try {
-                                p.sendMessage(main.name + "Â§6Le ping de Â§3" + s + " Â§6est de: Â§2" + Reflection.ping(p) + " msÂ§6.");
+                                p.sendMessage(main.name + "§6Le ping de §3" + s + " §6est de: §2" + ping.getPing(pl) + " ms§6.");
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -41,7 +42,7 @@ public class LagCommand implements CommandExecutor {
 
                 }else {
                     try {
-                        p.sendMessage(main.name + "Â§6Ton ping est de: Â§2" + Reflection.ping(p) + " msÂ§6.");
+                        p.sendMessage(main.name + "§6Ton ping est de: §2" + ping.getPing(p) + " ms§6.");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
