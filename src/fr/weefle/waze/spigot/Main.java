@@ -3,6 +3,7 @@ package fr.weefle.waze.spigot;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
+	
     public String name;
     public static Main instance;
 
